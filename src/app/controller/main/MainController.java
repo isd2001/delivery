@@ -12,6 +12,7 @@ public class MainController {
 	public ModelAndView indexHandle(WebRequest wr) {
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName("main");
+		mav.addObject("top", "/WEB-INF/views/index/top.jsp");
 		mav.addObject("main", "/WEB-INF/views/index/main.jsp");
 		return mav;
 	}
