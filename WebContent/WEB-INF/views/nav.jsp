@@ -19,10 +19,8 @@
           </ul>
           <form class="form-inline mt-2 mt-md-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <a href="${pageContext.servletContext.contextPath }">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-		              로그인
-		    </button>
+            <a class="btn btn-outline-success my-2 my-sm-0" href="${pageContext.servletContext.contextPath }/login.do">
+            	로그인
 		    </a>
           </form>
         </div>
