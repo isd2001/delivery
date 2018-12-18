@@ -34,18 +34,18 @@
 		<property name="definitions" value="/WEB-INF/tiles/*.xml"></property>
 	</bean>
 	<bean id="newResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="suffix" value =".jsp"/>
 		<property name="prefix" value="/WEB-INF/views/"/>
+		<property name="suffix" value =".jsp"/>
 	</bean>
 	 <bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 	 	<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"></property>
 	 	<property name="url" value="jdbc:oracle:thin:@kkh.mockingu.com:1521:xe"></property>
 	 	<property name="username" value="dev"></property>
-	 	<property name="password" value="oracle"></property>
+	 	<property name="password" value="123"></property>
 	 </bean>
 	 
 	
-	<!--  <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+	  <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="ds"></property>	 
 		<property name="mapperLocations" value="/WEB-INF/mappers/*.xml"></property>
 	 </bean> 
@@ -54,7 +54,7 @@
 	 	<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory"></constructor-arg>
 	 </bean>
 	 <context:component-scan base-package="app.models"></context:component-scan>
-	 -->
+	 
 	 <bean class="org.springframework.web.multipart.commons.CommonsMultipartResolver" id = "multipartResolver"/>
 	
 	<!-- WebSocketHandler 등록 및 매핑 

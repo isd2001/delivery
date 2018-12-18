@@ -31,7 +31,6 @@
 	</header>
 		
 	<main role="main">
-		<tiles:insertAttribute name="top" />
 		<tiles:insertAttribute name="main" />
 		
 	</main>
